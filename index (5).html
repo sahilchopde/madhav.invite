@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>चि. माधव - मुण्डन संस्कार एवं स्वर्ण सीढ़ी समारोह</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="apple-touch-icon" href="./favicon.png">
+
+    <!-- Open Graph / Social Media Sharing Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="चि. माधव - मुण्डन संस्कार एवं स्वर्ण सीढ़ी समारोह">
+    <meta property="og:description"
+        content="आप हमारे चि. माधव के मुण्डन संस्कार एवं स्वर्ण सीढ़ी समारोह में सादर आमंत्रित हैं।">
+    <meta property="og:image" content="https://theluxuryinvites.com/custom/invitation/favicon.png">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:image:type" content="image/png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Exact Fonts Requested + Hindi Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Upright:wght@400;500;600;700&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Gotu&family=Montserrat:wght@300;400;500&family=Yaldevi:wght@300;400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&family=Yatra+One&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP for Scroll Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+        /* Strict html/body rules to prevent unwanted horizontal scrolling */
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Custom Font Classes */
+        .font-cormorant {
+            font-family: 'Cormorant', 'Cormorant Placeholder', serif;
+        }
+
+        .font-gotu {
+            font-family: 'Gotu', 'Gotu Placeholder', sans-serif;
+        }
+
+        .font-cormorant-upright {
+            font-family: 'Cormorant Upright', 'Cormorant Upright Placeholder', serif;
+        }
+
+        .font-aboreto {
+            font-family: 'Aboreto', sans-serif;
+        }
+
+        .font-yaldevi {
+            font-family: 'Yaldevi', 'Yaldevi Placeholder', sans-serif;
+        }
+
+        .font-hindi {
+            font-family: 'Tiro Devanagari Hindi', serif;
+        }
+
+        .font-yatra {
+            font-family: 'Yatra One', cursive;
+        }
+
+        /* Responsive Container */
+        .app-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            background-color: #3b9b8b;
+            background-image: url('https://shehnaayi.com/wp-content/uploads/2026/03/bg.png');
+            background-repeat: repeat;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+            container-type: inline-size;
+            overflow: hidden;
+        }
+
+        /* --- WATERMARK STYLE --- */
+        .gristip-watermark {
+            position: absolute;
+            font-size: 14cqw;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            letter-spacing: 0.1em;
+            color: rgba(255, 255, 255, 0.25);
+            /* High opacity for visibility */
+            pointer-events: none;
+            user-select: none;
+            transform: rotate(-35deg);
+            z-index: 45;
+            /* Brought forward to ensure it's not hidden */
+            white-space: nowrap;
+        }
+
+        .gristip-watermark.dark {
+            color: rgba(0, 0, 0, 0.2);
+            /* High opacity for dark text on light bg */
+        }
+
+
+
+        /* --- PULSE BUTTON --- */
+        .pulse-icon {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px solid currentColor;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .pulse-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .pulse-icon::before,
+        .pulse-icon::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 50%;
+            border: 1px solid currentColor;
+            animation: pulseAnim 2s linear infinite;
+        }
+
+        .pulse-icon::after {
+            animation-delay: 1s;
+        }
+
+        @keyframes pulseAnim {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1.8);
+                opacity: 0;
+            }
+        }
+
+        /* --- SPARKLE ANIMATION FOR FOOTER --- */
+        @keyframes sparkleAnim {
+            0% {
+                opacity: 0;
+                transform: scale(0) translateY(0);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.5) translateY(-10px);
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(0) translateY(-20px);
+            }
+        }
+
+        .animate-sparkle {
+            animation: sparkleAnim 1.5s ease-out forwards;
+        }
+
+        /* Audio Button Attention Pulse */
+        @keyframes attentionPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(223, 168, 86, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(223, 168, 86, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(223, 168, 86, 0);
+            }
+        }
+
+        .audio-pulse {
+            animation: attentionPulse 2s infinite;
+        }
+
+        @keyframes floatAnim {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-float {
+            animation: floatAnim 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- AUDIO LINK: Background Music with Autoplay -->
+    <audio id="bgMusic" loop autoplay preload="auto">
+        <source src="./krishna-flute.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Music Toggle Button -->
+    <button id="music-toggle"
+        class="fixed bottom-6 right-6 w-14 h-14 bg-[#dfa856] text-[#000] rounded-full flex items-center justify-center z-[999] cursor-pointer transition-transform hover:scale-110 audio-pulse border-2 border-white">
+        <!-- Play Icon -->
+        <svg id="icon-play" class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+        </svg>
+        <!-- Pause Icon -->
+        <svg id="icon-pause" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+        </svg>
+    </button>
+
+    <div class="app-container">
+
+        <!-- ========================================================================= -->
+        <!-- HERO SECTION WRAPPER -->
+        <!-- ========================================================================= -->
+        <div class="relative w-full z-10 overflow-hidden">
+            <!-- 1. The Main Background Image -->
+            <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL3Jhd3BpeGVsX29mZmljZV80N19jdXRlX3NreV9mYW50YXN5X3dhbGxwYXBlcl9jYXJ0b29uX2lsbHVzdGFydF82MWE3NmZlYi1mZjk0LTQyMWYtYmY4NS1iMmRlYjA1N2FhOTdfMS5qcGc.jpg"
+                alt="Background" class="relative w-full h-auto z-0 pointer-events-none object-top block">
+
+            <!-- Scattered Small Square Images -->
+            <img src="./img101.jpeg"
+                class="absolute top-[5cqw] left-[3cqw] w-[32cqw] h-[32cqw] sm:w-[24cqw] sm:h-[24cqw] object-cover rounded-lg shadow-md border-2 border-white -rotate-6 z-10 gs-reveal">
+            <img src="./img103.jpeg"
+                class="absolute top-[30cqw] left-[8cqw] w-[32cqw] h-[32cqw] sm:w-[24cqw] sm:h-[24cqw] object-cover rounded-lg shadow-xl border-2 border-white rotate-3 z-20 gs-reveal">
+            <img src="./image.png"
+                class="absolute top-[55cqw] left-[4cqw] w-[32cqw] h-[32cqw] sm:w-[24cqw] sm:h-[24cqw] object-cover rounded-lg shadow-lg border-2 border-white -rotate-12 z-30 gs-reveal">
+
+            <img src="./img102.jpeg"
+                class="absolute top-[5cqw] right-[3cqw] w-[32cqw] h-[32cqw] sm:w-[24cqw] sm:h-[24cqw] object-cover rounded-lg shadow-md border-2 border-white rotate-6 z-10 gs-reveal">
+            <img src="./img104.jpeg"
+                class="absolute top-[30cqw] right-[8cqw] w-[32cqw] h-[32cqw] sm:w-[24cqw] sm:h-[24cqw] object-cover rounded-lg shadow-xl border-2 border-white -rotate-3 z-20 gs-reveal">
+            <img src="./img106.jpeg"
+                class="absolute top-[55cqw] right-[4cqw] w-[32cqw] h-[32cqw] sm:w-[24cqw] sm:h-[24cqw] object-cover rounded-lg shadow-lg border-2 border-white rotate-12 z-30 gs-reveal">
+
+
+
+            <!-- HERO TEXT -->
+            <div
+                class="absolute top-[30cqw] mt-[7cm] left-0 w-full flex flex-col items-center z-40 gs-parallax-hero px-[5cqw]">
+                <h1
+                    class="font-yatra text-[#0b1c4a] text-[13cqw] sm:text-[10cqw] tracking-[0.05em] uppercase leading-none drop-shadow-md text-center">
+                    चि. माधव</h1>
+                <p
+                    class="font-hindi text-[#0b1c4a] text-[5cqw] sm:text-[2.4cqw] tracking-[0.1em] my-[2cqw] drop-shadow-md">
+                    का
+                </p>
+                <h1
+                    class="font-hindi text-[#0b1c4a] text-[8cqw] sm:text-[7cqw] tracking-[0.05em] leading-none drop-shadow-md text-center font-medium">
+                    मुण्डन संस्कार</h1>
+            </div>
+
+        </div>
+
+        <!-- Faint Fixed Scroll Indicator -->
+        <div class="fixed bottom-6 left-0 w-full flex flex-col items-center z-[999] pointer-events-none opacity-40">
+            <!-- <p class="font-hindi text-black text-[3cqw] sm:text-[1.5cqw] tracking-[0.2em] font-bold">SCROLL BELOW</p> -->
+            <svg class="w-[4cqw] h-[4cqw] sm:w-[2cqw] sm:h-[2cqw] text-black mt-1" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- SECTION 1: GREEN SECTION (z-40) - Highest layer in the flow -->
+        <!-- ========================================================================= -->
+        <div class="relative w-full z-40 flex flex-col items-center pt-[10cqw] pb-[10cqw] -mt-[2px]"
+            style="background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTExL3Jhd3BpeGVsb2ZmaWNlMV92ZWhpY2xlX3RoZW1lZF93YWxscGFwZXJfY3V0ZV9wYXR0ZXJuX3dhdGVyY29sb182YTEwYTY2Ny02YTdmLTQ5MDYtYjdiYi1lZjkwN2IxOGYzNjBfMS5qcGc.jpg'); background-size: cover; background-repeat: no-repeat;">
+
+            <img src="./img100.jpeg" alt="img100"
+                class="w-[80cqw] sm:w-[50cqw] mt-[5cqw] mb-[10cqw] rounded-2xl shadow-xl z-50 relative gs-reveal">
+
+
+
+            <img src="https://framerusercontent.com/images/tjsmDC8g305SmMs98B3ABqR5QE.png?width=279&height=296"
+                alt="Ganesha" class="w-[22cqw] sm:w-[15cqw] -mt-[40px] mb-[4cqw] drop-shadow-lg gs-reveal">
+
+            <div class="gs-reveal flex flex-col items-center w-full mt-[2cqw]">
+                <p class="text-[3.5cqw] font-hindi tracking-[0.05em] text-black mb-[4cqw] text-center leading-loose">
+                    || श्री गणेशाय नमः ||<br>
+                    || श्री चारभुजानाथ जी नमः ||<br>
+                    || श्री सांवलिया सेठ नमः ||
+                </p>
+
+                <p class="text-[4.5cqw] sm:text-[3.5cqw] font-hindi text-black mb-[0.5cqw] text-center px-[4cqw]">
+                    श्रीमती सीता देवी एवं स्व. श्री परसराम जी समदानी</p>
+                <p class="text-[3cqw] font-hindi text-black mb-[1.5cqw] text-center">(अपने प्रपौत्र)</p>
+                <div class="w-[12cqw] h-[1px] bg-black opacity-40 my-[2cqw]"></div>
+                <p class="text-[4.5cqw] sm:text-[3.5cqw] font-hindi text-black mb-[0.5cqw] text-center px-[4cqw]">
+                    श्रीमती लाड देवी एवं श्री रतनलाल समदानी</p>
+                <p class="text-[3cqw] font-hindi text-black mb-[8cqw] text-center">(अपने सुपौत्र)</p>
+            </div>
+
+            <h2 class="text-[12cqw] font-hindi text-black tracking-[0.1em] mb-[6cqw] mt-[6cqw] gs-reveal opacity-90">
+                आमंत्रण</h2>
+
+            <div class="gs-reveal flex flex-col items-center w-full px-[5cqw]">
+
+                <h3
+                    class="text-[13cqw] sm:text-[9cqw] font-hindi text-black leading-none mb-[2cqw] text-center font-bold">
+                    चि. माधव</h3>
+
+                <p
+                    class="text-[3cqw] font-hindi tracking-[0.05em] text-black mt-[2cqw] mb-[10cqw] text-center px-[8cqw]">
+                    (सुपुत्र : श्रीमती स्मिता - श्री हेमन्त समदानी)</p>
+
+                <p
+                    class="text-[3.5cqw] sm:text-[2.5cqw] font-hindi tracking-[0.05em] text-black mb-[5cqw] leading-relaxed text-center px-[8cqw]">
+                    के मुण्डन संस्कार एवं स्वर्ण सीढ़ी समारोह में आपको सादर आमन्त्रित करते हैं। कृपया पधार कर आशीर्वाद
+                    प्रदान कर हमें अनुग्रहीत करें ।
+                </p>
+
+                <p
+                    class="text-[3.5cqw] sm:text-[2.6cqw] font-hindi font-light tracking-[0.1em] text-black mb-[8cqw] text-center px-[8cqw]">
+                    कार्यक्रम विवरण</p>
+            </div>
+
+            <!-- EVENTS GRID (Desktop Font Sizes Fixed) -->
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 gap-y-[10cqw] sm:gap-y-[6cqw] gap-x-[5cqw] w-[80cqw] sm:w-[85cqw] mx-auto z-20">
+
+                <!-- Sunderkand -->
+                <div class="relative flex justify-center items-center gs-reveal">
+                    <img src="https://framerusercontent.com/images/z8fNGgEf83GUW8GN7ddabomNq0.png?width=774&height=952"
+                        class="w-full drop-shadow-xl" alt="Card BG">
+                    <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjgwLTE2Ni1wLWwxZGJ1cTN2LnBuZw.png"
+                        class="absolute -top-[10%] -left-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjcyLTEzNi1wLWwxbXY5NnV5LnBuZw.png"
+                        class="absolute -bottom-[10%] -right-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center pt-[2cqw] px-[4cqw] text-center">
+                        <h4
+                            class="font-hindi font-bold text-[#3c6a58] text-[6cqw] sm:text-[3cqw] tracking-widest mb-[2cqw] sm:mb-[1.5cqw]">
+                            सुन्दरकाण्ड</h4>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            मंगलवार, 28 अप्रैल 2026</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            निवास स्थान</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-bold mb-[2cqw] sm:mb-[1.5cqw]">
+                            प्रातः 9.00 बजे से</p>
+                        <a href="https://www.google.com/maps/place/24%C2%B052'54.3%22N+74%C2%B018'23.9%22E/@24.8817556,74.3066314"
+                            target="_blank"
+                            class="font-hindi font-bold text-[#3c6a58] text-[3cqw] sm:text-[1.5cqw] tracking-[0.05em] border-b-2 border-[#3c6a58] pb-[0.2cqw] relative z-20">स्थान
+                            देखें</a>
+                    </div>
+                </div>
+
+                <!-- Bal Bindoli -->
+                <div class="relative flex justify-center items-center gs-reveal">
+                    <img src="https://framerusercontent.com/images/z8fNGgEf83GUW8GN7ddabomNq0.png?width=774&height=952"
+                        class="w-full drop-shadow-xl" alt="Card BG">
+                    <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsX29mZmljZV8zNF9wcm9mZXNzaW9uYWxfcGhvdG9ncmFwaHlfb2ZfYV9mbHlpbmdfYmx1ZV9idV82MjhhZDU5Yy0wNWI0LTRlNjYtODgyMS03M2Y0YWQ3OWE0MzgucG5n.png"
+                        class="absolute -top-[10%] -left-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsX29mZmljZV8zNF9wcm9mZXNzaW9uYWxfcGhvdG9ncmFwaHlfb2ZfYV9mbHlpbmdfYmx1ZV9idV9iNDA3MjdjZi03ZGVmLTQyODEtOTFmMS1kMDVjM2YyMDM5ZDAucG5n.png"
+                        class="absolute -bottom-[10%] -right-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center pt-[2cqw] px-[4cqw] text-center">
+                        <h4
+                            class="font-hindi font-bold text-[#3c6a58] text-[6cqw] sm:text-[3cqw] tracking-widest mb-[2cqw] sm:mb-[1.5cqw]">
+                            बाल बिन्दोली</h4>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            मंगलवार, 28 अप्रैल 2026</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            निवास स्थान</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-bold mb-[2cqw] sm:mb-[1.5cqw]">
+                            दोपहर 2.00 बजे</p>
+                        <a href="https://www.google.com/maps/place/24%C2%B052'54.3%22N+74%C2%B018'23.9%22E/@24.8817556,74.3066314"
+                            target="_blank"
+                            class="font-hindi font-bold text-[#3c6a58] text-[3cqw] sm:text-[1.5cqw] tracking-[0.05em] border-b-2 border-[#3c6a58] pb-[0.2cqw] relative z-20">स्थान
+                            देखें</a>
+                    </div>
+                </div>
+
+                <!-- Ratri Jagran -->
+                <div class="relative flex justify-center items-center gs-reveal">
+                    <img src="https://framerusercontent.com/images/z8fNGgEf83GUW8GN7ddabomNq0.png?width=774&height=952"
+                        class="w-full drop-shadow-xl" alt="Card BG">
+                    <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjgwLTE2Ni1wLWwxZGJ1cTN2LnBuZw.png"
+                        class="absolute -top-[10%] -left-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjcyLTEzNi1wLWwxbXY5NnV5LnBuZw.png"
+                        class="absolute -bottom-[10%] -right-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center pt-[2cqw] px-[4cqw] text-center">
+                        <h4
+                            class="font-hindi font-bold text-[#3c6a58] text-[6cqw] sm:text-[3cqw] tracking-widest mb-[2cqw] sm:mb-[1.5cqw]">
+                            रात्रि जागरण</h4>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            मंगलवार, 28 अप्रैल 2026</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            सतीमाताजी, कोशीथल</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-bold mb-[2cqw] sm:mb-[1.5cqw]">
+                            रात्रि 9.15 बजे से</p>
+                        <a href="https://www.google.com/maps/place/24%C2%B052'54.3%22N+74%C2%B018'23.9%22E/@24.8817556,74.3066314"
+                            target="_blank"
+                            class="font-hindi font-bold text-[#3c6a58] text-[3cqw] sm:text-[1.5cqw] tracking-[0.05em] border-b-2 border-[#3c6a58] pb-[0.2cqw] relative z-20">स्थान
+                            देखें</a>
+                    </div>
+                </div>
+
+                <!-- Mundan Sanskar -->
+                <div class="relative flex justify-center items-center gs-reveal">
+                    <img src="https://framerusercontent.com/images/z8fNGgEf83GUW8GN7ddabomNq0.png?width=774&height=952"
+                        class="w-full drop-shadow-xl" alt="Card BG">
+                    <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsX29mZmljZV8zNF9wcm9mZXNzaW9uYWxfcGhvdG9ncmFwaHlfb2ZfYV9mbHlpbmdfYmx1ZV9idV82MjhhZDU5Yy0wNWI0LTRlNjYtODgyMS03M2Y0YWQ3OWE0MzgucG5n.png"
+                        class="absolute -top-[10%] -left-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsX29mZmljZV8zNF9wcm9mZXNzaW9uYWxfcGhvdG9ncmFwaHlfb2ZfYV9mbHlpbmdfYmx1ZV9idV9iNDA3MjdjZi03ZGVmLTQyODEtOTFmMS1kMDVjM2YyMDM5ZDAucG5n.png"
+                        class="absolute -bottom-[10%] -right-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center pt-[2cqw] px-[4cqw] text-center">
+                        <h4
+                            class="font-hindi font-bold text-[#3c6a58] text-[6cqw] sm:text-[3cqw] tracking-widest mb-[2cqw] sm:mb-[1.5cqw]">
+                            मुण्डन संस्कार</h4>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            बुधवार, 29 अप्रैल 2026</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            सतीमाताजी, कोशीथल</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-bold mb-[2cqw] sm:mb-[1.5cqw]">
+                            प्रातः 6.15 बजे</p>
+                        <a href="https://www.google.com/maps/place/24%C2%B052'54.3%22N+74%C2%B018'23.9%22E/@24.8817556,74.3066314"
+                            target="_blank"
+                            class="font-hindi font-bold text-[#3c6a58] text-[3cqw] sm:text-[1.5cqw] tracking-[0.05em] border-b-2 border-[#3c6a58] pb-[0.2cqw] relative z-20">स्थान
+                            देखें</a>
+                    </div>
+                </div>
+
+                <!-- Haldi -->
+                <div class="relative flex justify-center items-center gs-reveal">
+                    <img src="https://framerusercontent.com/images/z8fNGgEf83GUW8GN7ddabomNq0.png?width=774&height=952"
+                        class="w-full drop-shadow-xl" alt="Card BG">
+                    <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjgwLTE2Ni1wLWwxZGJ1cTN2LnBuZw.png"
+                        class="absolute -top-[10%] -left-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjcyLTEzNi1wLWwxbXY5NnV5LnBuZw.png"
+                        class="absolute -bottom-[10%] -right-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center pt-[2cqw] px-[4cqw] text-center">
+                        <h4
+                            class="font-hindi font-bold text-[#3c6a58] text-[6cqw] sm:text-[3.5cqw] tracking-widest mb-[2cqw] sm:mb-[1.5cqw]">
+                            हल्दी की रस्म</h4>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            बुधवार, 29 अप्रैल 2026</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[2.8cqw] sm:text-[1.4cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            S.R. वाटिका, चुंगीनाका, पुराना उदयपुर रोड़<br>कपासन, जिला-चित्तौड़गढ़</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-bold mb-[3.5cqw] sm:mb-[2cqw]">
+                            प्रातः 10.00 बजे</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=S.R.+Vatika,+Kapasan,+Chittorgarh"
+                            target="_blank"
+                            class="font-hindi font-bold text-[#3c6a58] text-[3cqw] sm:text-[1.5cqw] tracking-[0.05em] border-b-2 border-[#3c6a58] pb-[0.2cqw] relative z-20">स्थान
+                            देखें</a>
+                    </div>
+                </div>
+
+                <!-- Mayra & Swarn Sidhi -->
+                <div class="relative flex justify-center items-center gs-reveal">
+                    <img src="https://framerusercontent.com/images/z8fNGgEf83GUW8GN7ddabomNq0.png?width=774&height=952"
+                        class="w-full drop-shadow-xl" alt="Card BG">
+                    <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsX29mZmljZV8zNF9wcm9mZXNzaW9uYWxfcGhvdG9ncmFwaHlfb2ZfYV9mbHlpbmdfYmx1ZV9idV82MjhhZDU5Yy0wNWI0LTRlNjYtODgyMS03M2Y0YWQ3OWE0MzgucG5n.png"
+                        class="absolute -top-[10%] -left-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsX29mZmljZV8zNF9wcm9mZXNzaW9uYWxfcGhvdG9ncmFwaHlfb2ZfYV9mbHlpbmdfYmx1ZV9idV9iNDA3MjdjZi03ZGVmLTQyODEtOTFmMS1kMDVjM2YyMDM5ZDAucG5n.png"
+                        class="absolute -bottom-[10%] -right-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center pt-[2cqw] px-[4cqw] text-center">
+                        <h4
+                            class="font-hindi font-bold text-[#3c6a58] text-[5cqw] sm:text-[2.5cqw] tracking-widest mb-[1.5cqw] sm:mb-[1cqw]">
+                            मायरा / स्वर्ण सीढ़ी</h4>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            बुधवार, 29 अप्रैल 2026</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[2.8cqw] sm:text-[1.4cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            S.R. वाटिका, चुंगीनाका, पुराना उदयपुर रोड़<br>कपासन, जिला-चित्तौड़गढ़</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-bold mb-[3.5cqw] sm:mb-[2cqw]">
+                            दोपहर 2.00 बजे</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=S.R.+Vatika,+Kapasan,+Chittorgarh"
+                            target="_blank"
+                            class="font-hindi font-bold text-[#3c6a58] text-[3cqw] sm:text-[1.5cqw] tracking-[0.05em] border-b-2 border-[#3c6a58] pb-[0.2cqw] relative z-20">स्थान
+                            देखें</a>
+                    </div>
+                </div>
+
+
+                <!-- Swaruchibhoj -->
+                <div class="relative flex justify-center items-center gs-reveal">
+                    <img src="https://framerusercontent.com/images/z8fNGgEf83GUW8GN7ddabomNq0.png?width=774&height=952"
+                        class="w-full drop-shadow-xl" alt="Card BG">
+                    <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjgwLTE2Ni1wLWwxZGJ1cTN2LnBuZw.png"
+                        class="absolute -top-[10%] -left-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjcyLTEzNi1wLWwxbXY5NnV5LnBuZw.png"
+                        class="absolute -bottom-[10%] -right-[10%] w-[45%] z-10 mix-blend-multiply drop-shadow-md"
+                        alt="Butterflies">
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center pt-[2cqw] px-[4cqw] text-center">
+                        <h4
+                            class="font-hindi font-bold text-[#3c6a58] text-[6cqw] sm:text-[3cqw] tracking-widest mb-[2cqw] sm:mb-[1.5cqw]">
+                            स्वरुचिभोज</h4>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            बुधवार, 29 अप्रैल 2026</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[2.8cqw] sm:text-[1.4cqw] font-medium mb-[0.8cqw] sm:mb-[0.5cqw]">
+                            S.R. वाटिका, चुंगीनाका, पुराना उदयपुर रोड़<br>कपासन, जिला-चित्तौड़गढ़</p>
+                        <p
+                            class="font-hindi text-[#3c6a58] text-[3.6cqw] sm:text-[1.8cqw] font-bold mb-[3.5cqw] sm:mb-[2cqw]">
+                            सायं 5.30 बजे से आपके आगमन तक</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=S.R.+Vatika,+Kapasan,+Chittorgarh"
+                            target="_blank"
+                            class="font-hindi font-bold text-[#3c6a58] text-[3cqw] sm:text-[1.5cqw] tracking-[0.05em] border-b-2 border-[#3c6a58] pb-[0.2cqw] relative z-20">स्थान
+                            देखें</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- SEE THE ROUTE -->
+            <div class="route-parallax flex flex-col items-center mt-[15cqw] mb-[35cqw] w-full relative z-40">
+                <h3
+                    class="font-hindi font-bold text-black text-[9cqw] tracking-widest mb-[2cqw] leading-tight text-center">
+                    आयोजन<br>स्थल</h3>
+                <p
+                    class="font-hindi text-black text-[3.5cqw] sm:text-[2.6cqw] tracking-[0.1em] mb-[4cqw] opacity-90 font-medium">
+                    स्थान देखने के लिए क्लिक करें</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=S.R.+Vatika,+Kapasan,+Chittorgarh"
+                    target="_blank" class="pulse-icon text-black w-[14cqw] h-[14cqw] pointer-events-auto">
+                    <div class="w-[3.5cqw] h-[3.5cqw] border border-current rounded-full bg-black"></div>
+                </a>
+            </div>
+
+            <!-- ========================================================================= -->
+            <!-- 1ST VINTAGE CAR (BLUE) -->
+            <!-- ========================================================================= -->
+            <div class="absolute bottom-0 left-0 w-full flex justify-center pointer-events-none z-50"
+                style="transform: translateY(calc(30% + 1cm));">
+                <img src="./BABySwing.png" alt="Baby Swing"
+                    class="w-[60%] sm:w-[40%] drop-shadow-2xl object-contain pointer-events-auto gs-car-reveal">
+            </div>
+
+        </div> <!-- End of Green Section -->
+
+
+        <!-- ========================================================================= -->
+        <!-- SECTION 2: PINK SECTION (z-30) -->
+        <!-- ========================================================================= -->
+        <div class="relative w-full z-30 pt-[20cqw] pb-[10cqw]"
+            style="background-image: url('https://framerusercontent.com/images/CxMq9eNVYFWeipRkOH7L6BF7EV4.png?width=1350&height=3716'); background-size: 100% auto; background-repeat: repeat;">
+
+
+
+            <div
+                class="flex flex-col items-center px-[8cqw] pt-[15cqw] gs-reveal font-aboreto text-[rgb(251,237,226)] relative z-20">
+                <p class="text-[3.5cqw] sm:text-[2.6cqw] font-hindi font-bold tracking-[0.1em] mb-[2cqw] opacity-90">
+                    विशेष आग्रह</p>
+                <h2
+                    class="font-hindi text-[rgb(251,237,226)] text-[10cqw] font-bold tracking-[0.1em] mb-[6cqw] leading-tight text-center">
+                    बाल मनुहार</h2>
+                <p
+                    class="font-hindi text-[4cqw] sm:text-[3cqw] font-medium text-center leading-relaxed opacity-100 mb-[4cqw] px-[6cqw] max-w-[85%] mx-auto">
+                    माधव के सिर से हटेंगे बाल<br>
+                    सुधरेगा रूप, बदलेगी चाल<br>
+                    पधारे आप सभी हमारे द्वार<br>
+                    करने हमारे 'माधव' को दुलार
+                </p>
+                <div class="w-[20cqw] h-[2px] bg-[rgb(251,237,226)] opacity-40 my-[3cqw]"></div>
+                <p
+                    class="font-hindi text-[3.5cqw] sm:text-[2.5cqw] font-medium text-center leading-relaxed opacity-100 mb-[10cqw] px-[6cqw] max-w-[85%] mx-auto">
+                    हमारे भैया के मुण्डन में जरूर-जरूर पधारना<br>
+                    <span class="text-[3cqw] sm:text-[2cqw] mt-[2cqw] block">- वंश, नित्या, सिया, आदवन, सिद्धू,
+                        अथर्व</span>
+                </p>
+            </div>
+
+            <!-- CSS CAROUSEL FRAME -->
+            <div class="relative w-[80cqw] sm:w-[50cqw] mx-auto gs-reveal mb-[15cqw] z-20">
+                <div
+                    class="relative w-full p-[2.5cqw] bg-[#efe3d1] rounded-t-[35cqw] rounded-b-[6cqw] shadow-[0_20px_40px_rgba(0,0,0,0.3)] border-[3px] border-[#c2aa80]">
+                    <div
+                        class="absolute -top-[5cqw] left-1/2 transform -translate-x-1/2 w-[10cqw] h-[10cqw] bg-[#efe3d1] rounded-full border-[3px] border-[#c2aa80] flex items-center justify-center z-30 shadow-lg">
+                        <div class="w-[5cqw] h-[5cqw] border border-[#a88f63] rounded-full bg-[#f4e8c1]"></div>
+                    </div>
+                    <div
+                        class="relative w-full aspect-[3/4] rounded-t-[30cqw] rounded-b-[4cqw] overflow-hidden border-[2px] border-[#a88f63] bg-white">
+
+                        <!-- 7 Local Images -->
+                        <img src="./image.png"
+                            class="carousel-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100">
+                        <img src="./img107.jpeg"
+                            class="carousel-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                        <img src="./img108.jpeg"
+                            class="carousel-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                        <img src="./img109.jpeg"
+                            class="carousel-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                        <img src="./img110.jpeg"
+                            class="carousel-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                        <img src="./img111.jpeg"
+                            class="carousel-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                        <img src="./img112.jpeg"
+                            class="carousel-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+
+                        <!-- Carousel Dots -->
+                        <div class="absolute bottom-[3cqw] left-0 w-full flex justify-center space-x-[2cqw] z-40">
+                            <div
+                                class="carousel-dot w-[2cqw] h-[2cqw] rounded-full bg-white opacity-100 transition-opacity duration-300 shadow-sm border border-gray-400">
+                            </div>
+                            <div
+                                class="carousel-dot w-[2cqw] h-[2cqw] rounded-full bg-white opacity-50 transition-opacity duration-300 shadow-sm border border-gray-400">
+                            </div>
+                            <div
+                                class="carousel-dot w-[2cqw] h-[2cqw] rounded-full bg-white opacity-50 transition-opacity duration-300 shadow-sm border border-gray-400">
+                            </div>
+                            <div
+                                class="carousel-dot w-[2cqw] h-[2cqw] rounded-full bg-white opacity-50 transition-opacity duration-300 shadow-sm border border-gray-400">
+                            </div>
+                            <div
+                                class="carousel-dot w-[2cqw] h-[2cqw] rounded-full bg-white opacity-50 transition-opacity duration-300 shadow-sm border border-gray-400">
+                            </div>
+                            <div
+                                class="carousel-dot w-[2cqw] h-[2cqw] rounded-full bg-white opacity-50 transition-opacity duration-300 shadow-sm border border-gray-400">
+                            </div>
+                            <div
+                                class="carousel-dot w-[2cqw] h-[2cqw] rounded-full bg-white opacity-50 transition-opacity duration-300 shadow-sm border border-gray-400">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- RSVP Parallax Section -->
+            <div
+                class="rsvp-parallax flex flex-col items-center mt-[10cqw] mb-[35cqw] w-full relative z-40 font-aboreto text-[rgb(251,237,226)]">
+                <h3
+                    class="font-hindi text-[rgb(251,237,226)] text-[11cqw] font-bold tracking-[0.1em] mb-[2cqw] leading-tight text-center">
+                    RSVP</h3>
+                <p class="font-hindi text-[3.5cqw] sm:text-[2.6cqw] tracking-[0.1em] font-bold mb-[4cqw] opacity-90">
+                    व्हाट्सएप पर संदेश भेजने के लिए क्लिक करें</p>
+                <a href="https://wa.me/919602799099" target="_blank"
+                    class="pulse-icon text-[rgb(251,237,226)] w-[14cqw] h-[14cqw] pointer-events-auto">
+                    <div class="w-[3.5cqw] h-[3.5cqw] border border-current rounded-full bg-[rgb(251,237,226)]"></div>
+                </a>
+            </div>
+
+            <!-- ========================================================================= -->
+            <!-- 2ND VINTAGE CAR (BLACK) -->
+            <!-- ========================================================================= -->
+            <!-- Image moved to Section 3 for better centering -->
+
+
+        </div> <!-- End of Pink Section -->
+
+
+        <!-- ========================================================================= -->
+        <!-- SECTION 3: YELLOW SECTION (z-20) -->
+        <!-- ========================================================================= -->
+        <div class="relative w-full z-20 pt-[20cqw] pb-[10cqw]"
+            style="background-image: url('https://framerusercontent.com/images/munXckNtNDlAiOMLLgrVsV1o.png?width=1350&height=2048'); background-size: 100% auto; background-repeat: repeat;">
+
+
+
+            <!-- Centered Image - Resized and Positioned -->
+            <div class="flex justify-center w-full mb-[8cqw] gs-reveal pt-[10cqw] -mt-[3cm]">
+                <img src="./NewKrishnaBoy.png" alt="Krishna Boy"
+                    class="w-[38%] sm:w-[23%] drop-shadow-2xl object-contain">
+            </div>
+
+            <div class="px-[8cqw] gs-reveal text-[#696b36] relative z-20 flex flex-col items-center">
+                <h2 class="font-hindi font-bold text-[10cqw] tracking-[0.1em] mb-[6cqw] leading-tight text-center">
+                    हमारा परिवार</h2>
+                <p
+                    class="font-hindi text-[3.5cqw] sm:text-[2.6cqw] font-medium text-center leading-relaxed opacity-90 mb-[12cqw] px-[5cqw]">
+                    हम इस खुशी के अवसर पर आपका स्वागत करने और इन आनंदमय पलों को एक साथ साझा करने के लिए उत्सुक हैं।
+                </p>
+
+                <!-- Grid of 4 Family/Info items -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-[10cqw] gap-x-[4cqw] mb-[15cqw]">
+
+                    <div
+                        class="flex flex-col items-center text-center bg-[#efe3d1] bg-opacity-40 p-[5cqw] rounded-xl border border-[#c2aa80]">
+                        <h4 class="font-hindi font-bold text-[5.5cqw] sm:text-[3.5cqw] tracking-widest mb-[2cqw]">विनीत
+                        </h4>
+                        <p class="font-hindi text-[3.2cqw] sm:text-[2cqw] font-medium leading-relaxed">रतनलाल, शंकरलाल,
+                            हेमन्त,<br>प्रतिक, मनोज (मोनु)<br><strong>समदानी परिवार</strong></p>
+                    </div>
+
+                    <div
+                        class="flex flex-col items-center text-center bg-[#efe3d1] bg-opacity-40 p-[5cqw] rounded-xl border border-[#c2aa80]">
+                        <h4 class="font-hindi font-bold text-[5.5cqw] sm:text-[3.5cqw] tracking-widest mb-[2cqw]">
+                            दर्शनाभिलाषी</h4>
+                        <p class="font-hindi text-[3.2cqw] sm:text-[2cqw] font-medium leading-relaxed">श्रीमती
+                            मधु-शंकरलाल समदानी<br>श्रीमती अंकिता-प्रतीक समदानी<br>मनोज (मोनु) समदानी</p>
+                    </div>
+
+                    <div
+                        class="flex flex-col items-center text-center bg-[#efe3d1] bg-opacity-40 p-[5cqw] rounded-xl border border-[#c2aa80]">
+                        <h4 class="font-hindi font-bold text-[5.5cqw] sm:text-[3.5cqw] tracking-widest mb-[2cqw]">
+                            स्वागताकांक्षी</h4>
+                        <p class="font-hindi text-[2.8cqw] sm:text-[1.8cqw] font-medium leading-relaxed">सुशीला
+                            देवी-मूलचन्द जी मालीवाल, कपासन<br>गीता देवी-श्री ओमप्रकाश जी सामरिया, कन्नौज<br>रतन
+                            देवी-श्री नरेन्द्रकुमार जी मुन्दड़ा, रावतभाटा<br>नीतू-श्री जितेश जी मूंदड़ा,
+                            रावतभाटा<br>प्रतिभा-श्री हर्षित जी वशिष्ठ, नोएडा<br>सिया समदानी</p>
+                    </div>
+
+                    <div
+                        class="flex flex-col items-center text-center bg-[#efe3d1] bg-opacity-40 p-[5cqw] rounded-xl border border-[#c2aa80]">
+                        <h4 class="font-hindi font-bold text-[5.5cqw] sm:text-[3.5cqw] tracking-widest mb-[2cqw]">
+                            प्रतिष्ठान</h4>
+                        <p class="font-hindi text-[3cqw] sm:text-[1.8cqw] font-medium leading-relaxed">धनलक्ष्मी जनरल
+                            स्टोर, कपासन (राज.)<br>मो. 9602799099, 9829718749<br><br><span
+                                class="font-hindi text-[3cqw] sm:text-[1.8cqw]">मैक्स एंड कंपनी (सी.ए.) पुणे<br>ऑल्ट
+                                कैपिटल प्रा. लि. पुणे</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Follow Parallax Section -->
+            <div
+                class="follow-parallax flex flex-col items-center mt-[10cqw] mb-[35cqw] w-full relative z-40 text-[#696b36]">
+                <h3 class="font-hindi font-bold text-[10cqw] tracking-[0.1em] mb-[2cqw] leading-tight text-center">
+                    संपर्क<br>करें</h3>
+                <p class="font-hindi text-[3.5cqw] sm:text-[2.6cqw] tracking-[0.1em] font-medium mb-[4cqw] opacity-80">
+                    सहायता के लिए कॉल करें</p>
+                <a href="tel:+919602799099" class="pulse-icon text-[#696b36] w-[14cqw] h-[14cqw] pointer-events-auto">
+                    <div class="w-[3.5cqw] h-[3.5cqw] border border-current rounded-full bg-[#696b36]"></div>
+                </a>
+            </div>
+
+            <!-- ========================================================================= -->
+            <!-- 3RD VINTAGE CAR (BLUE #2) -->
+            <!-- ========================================================================= -->
+            <div class="absolute bottom-0 left-0 w-full flex justify-center pointer-events-none z-50"
+                style="transform: translateY(calc(30% + 3cm));">
+                <img src="./BabyGuitar.png" alt="Baby Guitar"
+                    class="w-[60%] sm:w-[52%] drop-shadow-2xl object-contain pointer-events-auto gs-car-reveal">
+            </div>
+
+        </div> <!-- End of Yellow Section -->
+
+
+        <!-- ========================================================================= -->
+        <!-- SECTION 4: NIGHT SECTION (z-10) - Lowest layer in the flow -->
+        <!-- ========================================================================= -->
+        <div class="relative w-full z-10 pt-[30cqw] pb-[50cqw] flex flex-col items-center overflow-hidden bg-[#0c1822]"
+            style="background-image: url('https://framerusercontent.com/images/ySQ0SbzHWfVo1ClVjS303cCa9E.png?width=1536&height=1620'); background-size: cover; background-position: top center; background-repeat: no-repeat;">
+
+            <div class="gs-reveal flex flex-col items-center text-center px-[10cqw] pt-[15cqw] z-20">
+                <h2 class="text-[9cqw] font-hindi text-[#dfa856] tracking-[0.1em] mb-[4cqw]">प्रतीक्षा की घड़ियाँ</h2>
+
+                <!-- Dynamic Text-based Format Countdown -->
+                <div id="countdown-timer"
+                    class="font-hindi text-[#dfa856] text-[5cqw] sm:text-[4cqw] tracking-[0.1em] font-bold mb-[6cqw]">
+                    <!-- Injected by JS -->
+                </div>
+
+                <p
+                    class="font-hindi text-[3.5cqw] sm:text-[2.6cqw] font-medium text-[#dfa856] leading-relaxed opacity-70 mb-[10cqw]">
+                    हमें इस खुशी के अवसर पर आपके आगमन की प्रतीक्षा रहेगी।
+                </p>
+
+                <div class="relative w-full mt-[10cqw] flex justify-center items-center" id="sparkle-container">
+                    <h3 class="text-[6cqw] sm:text-[5cqw] font-hindi text-white tracking-[0.2em] font-bold drop-shadow-lg z-20"
+                        style="text-shadow: 0 0 20px rgba(255,255,255,0.5);">
+                        हार्दिक शुभकामनाओं सहित
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- End of App Container -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 1. Bruteforce Audio Autoplay Logic
+            const audio = document.getElementById('bgMusic');
+            const musicBtn = document.getElementById('music-toggle');
+            const iconPlay = document.getElementById('icon-play');
+            const iconPause = document.getElementById('icon-pause');
+            let isPlaying = false;
+
+            function toggleMusic() {
+                if (isPlaying) {
+                    audio.pause();
+                    isPlaying = false;
+                    iconPlay.classList.remove('hidden');
+                    iconPause.classList.add('hidden');
+                    musicBtn.classList.add('audio-pulse');
+                } else {
+                    audio.play().then(() => {
+                        isPlaying = true;
+                        iconPlay.classList.add('hidden');
+                        iconPause.classList.remove('hidden');
+                        musicBtn.classList.remove('audio-pulse');
+                    }).catch(e => console.log("Audio waiting for stronger interaction"));
+                }
+            }
+
+            musicBtn.addEventListener('click', toggleMusic);
+
+            function initialForcePlay() {
+                if (!isPlaying) {
+                    audio.play().then(() => {
+                        isPlaying = true;
+                        iconPlay.classList.add('hidden');
+                        iconPause.classList.remove('hidden');
+                        musicBtn.classList.remove('audio-pulse');
+                    }).catch(e => console.log("Autoplay blocked, waiting for interaction"));
+                }
+            }
+
+            window.addEventListener('scroll', initialForcePlay, { once: true });
+            window.addEventListener('click', initialForcePlay, { once: true });
+            window.addEventListener('touchstart', initialForcePlay, { once: true });
+
+            setTimeout(initialForcePlay, 500);
+
+            initGSAP();
+            initCarousel();
+            initCountdown();
+            initSparkles();
+
+
+
+            // 3. Carousel Logic
+            function initCarousel() {
+                const images = document.querySelectorAll('.carousel-img');
+                const dots = document.querySelectorAll('.carousel-dot');
+                let currentIndex = 0;
+
+                if (images.length > 1) {
+                    setInterval(() => {
+                        images[currentIndex].style.opacity = '0';
+                        if (dots[currentIndex]) dots[currentIndex].style.opacity = '0.5';
+
+                        currentIndex = (currentIndex + 1) % images.length;
+
+                        images[currentIndex].style.opacity = '1';
+                        if (dots[currentIndex]) dots[currentIndex].style.opacity = '1';
+                    }, 3000);
+                }
+            }
+
+            // 4. Countdown Timer logic targeting April 28, 2026
+            function initCountdown() {
+                const countDownDate = new Date("April 28, 2026 09:00:00").getTime();
+
+                const timerElement = document.getElementById("countdown-timer");
+
+                const timerInterval = setInterval(function () {
+                    const now = new Date().getTime();
+                    const distance = countDownDate - now;
+
+                    if (distance < 0) {
+                        clearInterval(timerInterval);
+                        timerElement.innerHTML = "00 दिन 00 घंटे 00 मिनट 00 सेकंड";
+                        return;
+                    }
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    timerElement.innerHTML = `
+                        <span class="text-white">${String(days).padStart(2, '0')}</span> दिन 
+                        <span class="text-white ml-[1cqw]">${String(hours).padStart(2, '0')}</span> घंटे 
+                        <span class="text-white ml-[1cqw]">${String(minutes).padStart(2, '0')}</span> मिनट 
+                        <span class="text-white ml-[1cqw]">${String(seconds).padStart(2, '0')}</span> सेकंड
+                    `;
+                }, 1000);
+            }
+
+            // 5. Wedding Sparkles/Firework Animation
+            function initSparkles() {
+                const container = document.getElementById('sparkle-container');
+
+                setInterval(() => {
+                    let sparkle = document.createElement('div');
+                    sparkle.className = 'absolute rounded-full bg-white opacity-0 animate-sparkle z-10';
+
+                    let size = Math.random() * 6 + 2;
+                    let left = Math.random() * 100;
+                    let top = Math.random() * 100;
+
+                    sparkle.style.width = `${size}px`;
+                    sparkle.style.height = `${size}px`;
+                    sparkle.style.left = `${left}%`;
+                    sparkle.style.top = `${top}%`;
+                    sparkle.style.boxShadow = '0 0 10px 3px rgba(255, 215, 0, 0.8)';
+
+                    container.appendChild(sparkle);
+
+                    setTimeout(() => sparkle.remove(), 1500);
+                }, 150);
+            }
+
+            // 6. GSAP Animations
+            function initGSAP() {
+                gsap.registerPlugin(ScrollTrigger);
+
+                gsap.to('.gs-parallax-hero', {
+                    y: "40cqw",
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: '.app-container',
+                        start: "top top",
+                        end: "bottom top",
+                        scrub: true
+                    }
+                });
+
+                gsap.utils.toArray('.gs-reveal').forEach(el => {
+                    gsap.fromTo(el,
+                        { y: 40, opacity: 0 },
+                        {
+                            y: 0,
+                            opacity: 1,
+                            duration: 1,
+                            ease: "power2.out",
+                            scrollTrigger: {
+                                trigger: el,
+                                start: "top 85%",
+                                toggleActions: "play none none reverse"
+                            }
+                        }
+                    );
+                });
+
+                ['.route-parallax', '.rsvp-parallax', '.follow-parallax'].forEach(selector => {
+                    gsap.to(selector, {
+                        y: "40cqw",
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: selector,
+                            start: "top 50%",
+                            end: "bottom top",
+                            scrub: true
+                        }
+                    });
+                });
+
+                gsap.utils.toArray('.gs-car-reveal').forEach(el => {
+                    gsap.fromTo(el,
+                        { y: 60, opacity: 0 },
+                        {
+                            y: 0,
+                            opacity: 1,
+                            duration: 1.2,
+                            ease: "power3.out",
+                            scrollTrigger: {
+                                trigger: el,
+                                start: "top 95%"
+                            }
+                        }
+                    );
+                });
+            }
+        });
+    </script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
+        integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+        data-cf-beacon='{"version":"2024.11.0","token":"dbb40e3b27694109914698e84f8a92c5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
